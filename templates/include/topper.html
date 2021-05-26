@@ -5,7 +5,7 @@
             <div class="col-lg-8 col-md-8 col-sm-7">
                 <div class="list-inline">
                     <a href="tel:+55-4XX-634-7071"><i class="fa fa-phone"></i>+8801733178283</a>
-                    <a href="tel:info@themevessel.com"><i class="fa fa-envelope"></i>malik1707097@stud.kuet.ac.bd</a>
+                    <a href="tel:info@themevessel.com"><i class="fa fa-envelope"></i>carzone543@gmail.com</a>
                     <a href="tel:info@themevessel.com"><i class="fa fa-clock-o"></i>Mon - Sun: 8:00am - 6:00pm</a>
                 </div>
             </div>
@@ -17,7 +17,7 @@
                         <a href="{% url 'dashboard' %}" class="sign-in"><i class="fa fa-tachometer"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="javascript:{document.getElementById('logout').submit()}" class="sign-out"><i class="fa fa-sign-out"></i>Logout</a>
+                        <a href="javascript:{document.getElementById('logout').submit()}" class="sign-in"><i class="fa fa-sign-out"></i>Logout</a>
                         <form action="{% url 'logout' %}" id="logout" method="POST">
                             {% csrf_token %}
                             <input type="hidden">
