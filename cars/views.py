@@ -86,3 +86,18 @@ def search(request):
 		'transmission_search':transmission_search,
 	}
 	return render(request, 'cars/search.html',data)
+
+def checkout(request):
+	id=request.POST.get('system',None)
+	single_car=get_object_or_404(Car,pk=id)
+	data={
+		'single_car': single_car,
+	}
+	return render(request, 'cars/checkout.html',data)
+def payment(request):
+	money=int(request.POST.get('system',None))
+	money=money+4000
+	data={
+		'money':money,
+	}
+	return render(request,'cars/payment.html',data)
